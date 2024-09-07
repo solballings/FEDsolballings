@@ -37,12 +37,12 @@ Responsive
   https://eventix.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+Eventix
   <img src="readme-images/klein-scherm.png" width="375px" alt="klein scherm eventix">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+Eventix
   <img src="readme-images/groot-scherm.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
