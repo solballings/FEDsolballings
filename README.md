@@ -87,18 +87,12 @@ Eventix
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Ik vind de css toch nog erg lastig. Helaas was het downloaden van de foto's mislukt maar het is onderhand wel gelukt
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Ik wil graag kijken of mijn html klopt en of het begin wat ik heb gemaakt met css er correct uit ziet. 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

@@ -15,3 +15,78 @@ header {
     padding: 50px 0;
 }
 
+header.menuOpen {
+	background-color:lime;	
+  }
+  
+  button {
+	display:grid;
+	place-items:center;
+	
+	width:4em;
+	aspect-ratio:1/1;
+	
+	appearance:none;
+	border:none;
+	background-color:blue; 
+	
+  }
+  
+  header.menuOpen button{
+	background-color:deeppink;
+	
+  }
+  
+  button span {
+	
+	display:block;
+	
+	width:1.5em;
+	height:.2em;
+	background-color:white;
+	
+	grid-row-start:1;
+	grid-column-start:1;
+	
+	border-radius:.1em;
+	
+	transition:.3s;
+	
+   
+	
+  }
+  
+  button span:nth-child(1) {
+	
+	translate: 0 -.5em;
+  }
+  
+  button span:nth-child(2) {
+
+  }
+   
+	
+  
+  button span:nth-child(3) {
+	translate: 0 .5em;
+	
+  }
+  
+  header.menuOpen button span:nth-child(1) {
+  translate:0 0; 
+	rotate:135deg;
+	
+  
+  }
+  
+  header.menuOpen button span:nth-child(2) {
+	scale: 0 1;
+	
+  }
+  
+  header.menuOpen button span:nth-child(3) {
+  translate:0 0;
+  rotate:-135deg;
+  
+  }
+  
