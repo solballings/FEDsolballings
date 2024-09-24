@@ -1,99 +1,154 @@
-/* Algemene opmaak voor de website */
+/* Algemene opmaak */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #000000;
-    background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-/* Stijlen voor de header */
 header {
-    background-color: #1e88e5;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
+  background-color: #1e88e5;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+header p {
+  margin: 10px 0;
 }
 
 header nav ul {
-	display: flex;
-	gap: 1em;
-	list-style-type: none;
-	color: white;
-
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
 }
-header.menuOpen {
-	background-color:lime;	
-  }
-  
-  button {
-	display:grid;
-	place-items:center;
-	
-	width:4em;
-	aspect-ratio:1/1;
-	
-	appearance:none;
-	border:none;
-	background-color:blue; 
-	
-  }
-  
-  header.menuOpen button{
-	background-color:deeppink;
-	
-  }
-  
-  button span {
-	
-	display:block;
-	
-	width:1.5em;
-	height:.2em;
-	background-color:white;
-	
-	grid-row-start:1;
-	grid-column-start:1;
-	
-	border-radius:.1em;
-	
-	transition:.3s;
-	
-   
-	
-  }
-  
-  button span:nth-child(1) {
-	
-	translate: 0 -.5em;
-  }
-  
-  button span:nth-child(2) {
 
-  }
-   
-	
-  
-  button span:nth-child(3) {
-	translate: 0 .5em;
-	
-  }
-  
-  header.menuOpen button span:nth-child(1) {
-  translate:0 0; 
-	rotate:135deg;
-	
-  
-  }
-  
-  header.menuOpen button span:nth-child(2) {
-	scale: 0 1;
-	
-  }
-  
-  header.menuOpen button span:nth-child(3) {
-  translate:0 0;
-  rotate:-135deg;
-  
-  }
-  
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+button[aria-label="toggle menu"] {
+  display: none;
+}
+
+/* Hero sectie */
+#hero {
+  background-color: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#hero h2 {
+  font-size: 3rem;
+}
+
+#hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+#hero button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: white;
+  color: #0073e6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#hero button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Partners sectie */
+#partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+#partners img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Ticketshop sectie */
+#ticketshop {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+#ticketshop img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Pricing sectie */
+#pricing {
+  background-color: #0073e6;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+#pricing img {
+  max-width: 600px;
+  height: auto;
+}
+
+/* How it works sectie */
+#how-it-works {
+  padding: 50px;
+  text-align: center;
+}
+
+#how-it-works ol {
+  text-align: left;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer address, footer nav ul, footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
