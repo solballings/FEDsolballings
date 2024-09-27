@@ -1,26 +1,37 @@
 /* Algemene opmaak */
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url('./fonts/RightGrotesk-Variable.ttf') format('woff2');
+}
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #000000;
   background-color: #ffffff;
 }
 
 header {
-  background-color: #1e88e5;
+  display: flex;
+  position: absolute;
+  left: 15%;
   color: white;
   text-align: center;
-  padding: 50px 0;
+  padding: 2em 0;
+  align-items: center;
+
 }
 
 header h1 {
   font-size: 2rem;
   margin-bottom: 0;
-}
-
-header p {
-  margin: 10px 0;
+  
+  
 }
 
 header nav ul {
@@ -31,10 +42,15 @@ header nav ul {
   gap: 1rem;
 }
 
+header nav ul li{
+  display: flex;
+  align-items: center;
+}
+
 header nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.625em;
 }
 
 button[aria-label="toggle menu"] {
@@ -42,84 +58,133 @@ button[aria-label="toggle menu"] {
 }
 
 /* Hero sectie */
-#hero {
-  background-color: #0073e6;
+main > section:first-of-type {
+  background-color: #006aff;
   color: white;
-  text-align: center;
-  padding: 100px 20px;
+  display: grid;
+  gap: 2em;
+ 
+  grid-template-rows: max-content 40vw;
+  overflow: hidden; 
+  text-align: left;
+
 }
 
-#hero h2 {
+
+main > section:first-of-type div {
+  padding: 5em 1.25em 0;
+  height:34em;
+  font-family: "Grotesk";
+
+
+} 
+
+main > section:first-of-type img {
+  max-width: 18.75em;
+  height: auto;
+  justify-self: center;
+  padding-top: 4em;
+  
+}
+
+@media (width > 40em) {
+  main > section:first-of-type {
+    grid-template-rows: none;
+    grid-template-columns: 3fr 2fr;
+
+    background-color: #b3e5ff;
+  }
+  main > section:first-of-type div {
+    background-color: #006aff;
+  }
+  main > section:first-of-type img {
+    align-self: center;
+  }
+}
+
+
+
+/* div content */
+
+main > section:first-of-type h2 {
   font-size: 3rem;
+  margin: 0;
+  
 }
 
-#hero p {
-  margin: 20px 0;
+main > section:first-of-type p {
+  margin: 1.25em 0;
   font-size: 1.2rem;
 }
 
-#hero button {
-  padding: 10px 20px;
-  margin: 10px;
+main > section:first-of-type button {
+  padding: 0.625em 1.25em;
+  margin-right: 0.625em;
   background-color: white;
-  color: #0073e6;
+  color: #000000;
   border: none;
-  border-radius: 5px;
+  border-radius: 1.5625em;
   cursor: pointer;
+  
 }
 
-#hero button:hover {
+main > section:first-of-type button:hover {
   background-color: #f0f0f0;
+  color: #04407c;
+  box-shadow: .15em .2em .15em black;
+
 }
+
+
 
 /* Partners sectie */
-#partners {
+main > section:nth-of-type(2) {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px;
+  padding: 3.125em;
 }
 
-#partners img {
-  max-width: 200px;
+main > section:nth-of-type(2) img {
+  max-width: 12.5em;
   height: auto;
 }
 
 /* Ticketshop sectie */
-#ticketshop {
+main > section:nth-of-type(3) {
   background-color: #f9f9f9;
-  padding: 50px;
+  padding: 3.125em;
   text-align: center;
 }
 
-#ticketshop img {
-  max-width: 300px;
+main > section:nth-of-type(3) img {
+  max-width: 18.75em;
   height: auto;
 }
 
 /* Pricing sectie */
-#pricing {
+main > section:nth-of-type(4) {
   background-color: #0073e6;
   color: white;
-  padding: 50px;
+  padding: 3.125em;
   text-align: center;
 }
 
-#pricing img {
-  max-width: 600px;
+main > section:nth-of-type(4) img {
+  max-width: 37.5em;
   height: auto;
 }
 
 /* How it works sectie */
-#how-it-works {
-  padding: 50px;
+main > section:nth-of-type(5) {
+  padding: 3.125em;
   text-align: center;
 }
 
-#how-it-works ol {
+main > section:nth-of-type(5) ol {
   text-align: left;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 
 /* Footer */
@@ -127,13 +192,13 @@ footer {
   background-color: #282c34;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 1.25em;
 }
 
 footer address, footer nav ul, footer ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 0.625em 0;
 }
 
 footer nav ul {
