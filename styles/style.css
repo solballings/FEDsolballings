@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: "Grotesk";
-  src: url('./fonts/RightGrotesk-Variable.ttf') format('woff2');
+  src: url('../fonts/RightGrotesk-Variable.woff2') format('woff2');
 }
 
 
@@ -30,7 +30,6 @@ header {
 header h1 {
   font-size: 2rem;
   margin-bottom: 0;
-  
   
 }
 
@@ -70,6 +69,9 @@ main > section:first-of-type {
 
 }
 
+h2 {
+  font-family:"Grotesk";
+}
 
 main > section:first-of-type div {
   padding: 5em 1.25em 0;
@@ -132,6 +134,7 @@ main > section:first-of-type button:hover {
   background-color: #f0f0f0;
   color: #04407c;
   box-shadow: .15em .2em .15em black;
+  transition: .8s;
 
 }
 
